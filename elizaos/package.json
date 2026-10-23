@@ -1,0 +1,23 @@
+{
+  "name": "@youraitools/plugin-x402-tools",
+  "version": "0.1.0",
+  "description": "elizaOS plugin: pay-per-call x402 tools for agents. OFAC address screen (PayGuard), Base token safety check (TokenVerdict), Hyperliquid smart-money positioning (SmartPerps), paid-API finder (ToolPick), web page to Markdown (WebRead), prompt-injection scan (InjectScan). USDC per call, no custody.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["src", "images", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test/", "test:live": "LIVE=1 node --test test/" },
+  "keywords": ["elizaos", "elizaos-plugins", "plugin", "x402", "usdc", "ofac", "token-safety", "prompt-injection", "hyperliquid"],
+  "license": "MIT",
+  "homepage": "https://api.youraitools.co/docs/which-api",
+  "peerDependencies": { "@elizaos/core": ">=1.0.0" },
+  "peerDependenciesMeta": { "@elizaos/core": { "optional": true } },
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {
+      "YOURAITOOLS_CREDITS_KEY": { "type": "string", "description": "Optional prepaid credits key (https://api.youraitools.co/credits/). Without it (and without an x402-paying fetch) actions report the 402 price instead of running.", "required": false, "sensitive": true },
+      "YOURAITOOLS_MAX_PRICE_USD": { "type": "string", "description": "Per-call spend cap in USD (default 0.01).", "required": false }
+    }
+  },
+  "engines": { "node": ">=20" }
+}

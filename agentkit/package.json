@@ -1,0 +1,15 @@
+{
+  "name": "@youraitools/agentkit-action-provider",
+  "version": "0.1.0",
+  "description": "Coinbase AgentKit action provider for YourAITools pay-per-call x402 APIs: PayGuard (OFAC screen), TokenVerdict (Base token safety), SmartPerps (Hyperliquid smart money), ToolPick (paid-API finder), WebRead (page to Markdown), InjectScan (prompt-injection scan). Pays per call with the AgentKit wallet only when enabled; spend-capped; no custody.",
+  "main": "dist/youraitools/index.js",
+  "types": "dist/youraitools/index.d.ts",
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "scripts": { "build": "tsc -p .", "test": "tsc -p . && node --test test/*.test.cjs", "test:live": "tsc -p . && LIVE=1 node --test test/*.test.cjs" },
+  "keywords": ["agentkit", "coinbase", "action-provider", "x402", "usdc", "ofac", "token-safety", "prompt-injection", "hyperliquid"],
+  "license": "MIT",
+  "homepage": "https://api.youraitools.co/docs/which-api",
+  "peerDependencies": { "@coinbase/agentkit": ">=0.10.0", "@x402/fetch": ">=2.23.0 <3", "@x402/evm": ">=2.23.0 <3", "@x402/svm": ">=2.23.0 <3", "zod": "^3.22.0" },
+  "devDependencies": { "@coinbase/agentkit": "0.10.4", "typescript": "^5", "zod": "^3", "reflect-metadata": "^0.2" },
+  "engines": { "node": ">=20" }
+}
