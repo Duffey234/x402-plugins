@@ -31,8 +31,8 @@ Inputs are taken from action options (`{ address }`, `{ token }`, `{ symbol }`, 
 ## Tests
 
 ```bash
-node --test test/            # offline (mocked 402s)
-LIVE=1 node --test test/     # also checks the real 402 terms of all six endpoints (free, nothing is paid)
+node --test test/*.test.js            # offline (mocked 402s)
+LIVE=1 node --test test/*.test.js     # also checks the real 402 terms of all six endpoints (free, nothing is paid)
 ```
 
 ## Tools

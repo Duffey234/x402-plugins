@@ -4,7 +4,7 @@ Framework packages for six pay-per-call [x402](https://x402.org) APIs (PayGuard,
 
 | Framework | Directory | Package | Tests |
 |---|---|---|---|
-| elizaOS | [`elizaos/`](elizaos/) | `@youraitools/plugin-x402-tools` (6 actions, zero deps) | `node --test test/` |
+| elizaOS | [`elizaos/`](elizaos/) | `@youraitools/plugin-x402-tools` (6 actions, zero deps) | `node --test test/*.test.js` |
 | Coinbase AgentKit | [`agentkit/`](agentkit/) | `@youraitools/agentkit-action-provider` + in-tree PR files in `agentkit/pr-coinbase-agentkit/` | `npm test` |
 | LangChain (Python) | [`langchain/`](langchain/) | `langchain-youraitools` | `pytest` |
 | CrewAI | [`crewai/`](crewai/) | `crewai-youraitools` | `pytest` |

@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "exports": { ".": "./src/index.js" },
   "files": ["src", "images", "README.md", "LICENSE"],
-  "scripts": { "test": "node --test test/", "test:live": "LIVE=1 node --test test/" },
+  "scripts": { "test": "node --test test/*.test.js", "test:live": "LIVE=1 node --test test/*.test.js" },
   "keywords": ["elizaos", "elizaos-plugins", "plugin", "x402", "usdc", "ofac", "token-safety", "prompt-injection", "hyperliquid"],
   "license": "MIT",
   "homepage": "https://api.youraitools.co/docs/which-api",
